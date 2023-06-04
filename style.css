@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body {
+    background: #3CB371;
+    font-size: 0.8em;
+}
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 5px;
+    align-content: flex-start;
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 800px;
+    padding-top: 10px;
+    margin-top: 10px;
+    justify-content: start;
+}
+.section1 {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 760px;
+    justify-content: start;
+}
+.image {
+    width: 100%;
+    height: 600px;
+    max-width: 100%;
+}
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.section1 p, .section2 p, .section3 p, .section4 p {
+    margin-left: 15px;
+    margin-right: 10px;
+    color: rgb(88, 88, 88);
+}
+ .section1 h2, .section2 h2, .section3 h2, .section4 h2 {
+    margin-left: 15px;
+}
+.section1 .comments, .section2 .comments, .section3 .comments, .section4 .comments {
+    display: flex;
+    justify-content: end;
+    margin-left: 50px;
+    margin-left: auto;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    margin: 10px;
+    padding: 10px;
+}
+.section2 {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 500px;
+    justify-content: start;
+    align-items: start;
+}
+.section2 .text, .section3 .text {
+    margin-bottom: 80px;
+}
+.image2 {
+    width: 320px;
+    height: 200px;
+    max-width: 100%;
+}
+.image2 img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.section3 {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 265px;
+    justify-content: start;
+    align-items: start;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+.section3 h2 {
+    margin-top: 15px;
+}
+.section4 {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 650px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    justify-content: start;
+    align-items: start;
+}
+.section4 .text {
+    margin-bottom: 20px;
+}
+@media (max-width: 320px) {
+    .containers {
+        flex-direction: column;
+    }
+    .section1, .section2, .section3, .section4 {
+        max-width: 30%;
+    }
+}
